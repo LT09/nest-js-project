@@ -1,6 +1,7 @@
 // Importing the Injectable decorator from NestJS.
 // Injectable marks the class as a provider that can be injected into other classes, like controllers.
 import { Injectable } from '@nestjs/common';
+// import { User, Bookmark } from '@prisma/client';
 
 // The @Injectable decorator declares that AuthService can be injected into other components
 // like controllers, making its methods accessible wherever it's imported.
