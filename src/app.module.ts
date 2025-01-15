@@ -6,12 +6,13 @@ import { Module } from '@nestjs/common';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { BookmarkModule } from './bookmark/bookmark.module';
+import { PrismaModule } from './prisma/prisma.module';
 
 // The @Module decorator is used to define AppModule as a NestJS module.
 // It helps in organizing the application by grouping related functionalities.
 @Module({
   // Listing modules that AppModule will use. This establishes AppModule's dependencies on these modules.
   // It means that AppModule can utilize functionalities exported from these imported modules.
-  imports: [AuthModule, UserModule, BookmarkModule],
+  imports: [AuthModule, UserModule, BookmarkModule, PrismaModule],
 })
 export class AppModule {} // Defining the AppModule class that brings together the functionality of the imported modules.
